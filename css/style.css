@@ -227,6 +227,7 @@ h2 {
     padding: 16px 0;
     list-style-type: none;
     margin: 0;
+    flex-wrap: wrap;
 }
 .choose-section__item a{
     display: block;
