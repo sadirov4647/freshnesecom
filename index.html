@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/style.css">
 </head>
+
 <body>
     <!-- Site Header -->
     <header class="site-header">
@@ -16,7 +18,8 @@
                 <ul class="nav-info__list">
                     <li class="nav-info__item"><a href="#" class="active-link">Chat with us</a></li>
                     <li class="nav-info__item"><a href="tel" class="nav-black">+420 336 775 664</a></li>
-                    <li class="nav-info__item"><a href="info@freshnesecom.com" class="nav-black">info@freshnesecom.com</a></li>
+                    <li class="nav-info__item"><a href="info@freshnesecom.com"
+                            class="nav-black">info@freshnesecom.com</a></li>
                 </ul>
 
                 <ul class="nav-page__list">
@@ -25,7 +28,33 @@
                     <li class="nav-page__item"><a href="#" class="active-link">Careers</a></li>
                 </ul>
             </nav>
+
+            <section class="search-section">
+                <a class="site-logo__link" href="#"><img class="site-logo" src="/images/header/sitelogo.svg"
+                        alt="site logo" width="177" height="18"></a>
+                <div class="search-wrapper">
+                    <form class="search-form" action="select1.php" method="post">
+                        <select class="search-select" name="hero[]">
+                            <option disabled>Выберите героя</option>
+                            <option value="Чебурашка">Чебурашка</option>
+                            <option selected value="Крокодил Гена">All categories</option>
+                            <option value="Шапокляк">Шапокляк</option>
+                            <option value="Крыса Лариса">Крыса Лариса</option>
+                        </select>
+                        <input class="search-input" type="search" placeholder="Search Products, categories ...">
+                        <button class="search-btn" type="search"><img src="/images/header/search.png"
+                                alt="search button" width="16" height="16"></button>
+                    </form>
+                </div>
+                <ul class="search-images-list">
+                    <li class="search-images__item"><a href="#"><img src="/images/header/userimg.svg" alt="user image"
+                                width="24" height="24"></a></li>
+                    <li class="search-images__item"><a href="#"><img src="/images/header/basket.svg" alt="user image"
+                                width="24" height="24"></a></li>
+                </ul>
+            </section>
         </div>
     </header>
 </body>
+
 </html>
