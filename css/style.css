@@ -213,3 +213,61 @@ h2 {
 .search-images__item:not(:last-child){
     margin-right: 40px;
 }
+
+/* Choose section */
+.choose-section{
+    background: #F9F9F9;
+    font-family: var(--heading-fonts-stack);
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+}
+.choose-section__list{
+    display: flex;
+    padding: 16px 0;
+    list-style-type: none;
+    margin: 0;
+}
+.choose-section__item a{
+    display: block;
+    text-decoration: none;
+    color: var(--titles-color);
+}
+.hover-list{
+    display: none;
+    position: absolute;
+    list-style-type: none;
+    background: #A9A9A9;
+    padding: 20px;
+    top: 0;
+    transform: translate(-10px, 20px);
+}
+.hover-item a:hover{
+    color: var(--btn-color);
+}
+.hover-item a{
+    text-decoration: none;
+    color: var(--titles-color);
+}
+.choose-section__item{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.choose-section__item:not(:last-child){
+    margin-right: 45px;
+}
+.choose-section__item:hover::after{
+    transform: rotate(270deg);
+}
+.choose-section__item:hover .hover-list{
+    display: block;
+}
+.choose-section__item::after{
+    content: "";
+    background: url(/images/header/down.png) no-repeat;
+    width: 12px;
+    height: 6px;
+    margin-left: 5px;
+    cursor: pointer;
+}
