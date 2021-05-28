@@ -210,6 +210,9 @@ h2 {
 .search-images-list:active{
     opacity: 0.5;
 }
+.search-images__item a{
+    display: block;
+}
 .search-images__item:not(:last-child){
     margin-right: 40px;
 }
@@ -271,4 +274,186 @@ h2 {
     height: 6px;
     margin-left: 5px;
     cursor: pointer;
+}
+
+@media only screen and (max-width:575px){
+    .container{
+        max-width: 535px;
+    }
+    .site-nav{
+        display: flex;
+        position: fixed;
+        top: 5%;
+        z-index: 15;
+    }
+    .search-section{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .search-form{
+        display: block;
+    }
+    
+    .site-logo__link{
+        position: fixed;
+        top: 40px;
+    }
+    .search-select{
+        margin-right: 0;
+    }
+    .search-wrapper{
+        margin-top: 70px;
+        margin-bottom: 20px;
+    }
+    .search-images-list{
+        padding: 0;
+        margin: 0;
+    }
+    .nav-page__list{
+        position: absolute;
+        top: 0;
+        margin-top: 430px;
+        display: flex;
+        flex-direction: column;
+        left: 10px;
+        display: none;
+        z-index: 99;
+        transition: top 1s ease;
+        transition: 0.3s;
+    }
+    .choose-section__list{
+        position: fixed;
+        flex-direction: column;
+        display: none;
+        z-index: 99;
+        margin-left: 20px;
+    }
+    .search-btn{
+        position: absolute;
+        position: fixed;
+        top: 40px;
+        right: 40px;
+        padding: 0;
+    }
+    .search-input{
+        display: none;
+    }
+    .search-form input[type="search"]{
+        width: 215px;
+        padding-left: 0;
+    }
+    .input-block{
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 400px;
+        transform: translateX(400px);
+        transition: 0.3s;
+    }
+    
+    .choose-section__item{
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .choose-section__item:not(:last-child){
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+    .choose-section__item a{
+        white-space: nowrap;
+    }
+    
+    .nav-page__item a{
+        white-space: nowrap;
+    }
+    .nav-info__list{
+        display: none;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        margin-right: auto;
+        border-bottom: none;
+        margin-top: 430px;
+        margin-left: 301px;
+        transition: top 1s ease;
+        transition: 0.3s;
+    }
+    .open{
+        display: block;
+    }
+    .choose-section__list{
+        display: block;
+        position: absolute;
+        height: 90vh;
+        margin-top: 15vh;
+        position: fixed;
+        padding-left: 32px;
+        padding-top: 64px;
+        top: 0;
+        left: -20px;
+        right: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: top 1s ease;
+        transform: translateX(-300px);
+        transition: 0.3s;
+    }
+    .burger-btn {
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 50%;
+        width: 35px;
+        height: 35px;
+        margin-top: 0;
+        margin-left: 0;
+        left: 0;
+        color: var(--btn-color);
+    }
+    .burger-btn .lines {
+        display: block;
+        width: 100%;
+        height: 4px;
+        background: var(--btn-color);
+        position: relative;
+        top: 50%;
+        transition: transform 0.5s cubic-bezier(0, 0, 1, 1), background 0.5s ease;
+        margin-top: -2px;
+    }
+    .burger-btn .lines:after,
+    .burger-btn .lines:before {
+        content: "";
+        width: 100%;
+        height: 4px;
+        position: absolute;
+        left: 0;
+        background: var(--btn-color);
+        -webkit-transition: all 0.3s cubic-bezier(0.7, 0, 0.3, 1);
+    }
+    .burger-btn .lines:after {
+        bottom: -10px;
+    }
+    .burger-btn .lines:before {
+        top: -10px;
+    }
+    .burger-btn.active .lines {
+        background: transparent;
+        transform: rotate(90deg);
+    }
+    .burger-btn.active .lines:after {
+        top: 0;
+        transform: rotate(-135deg);
+    }
+    .burger-btn.active .lines:before {
+        top: 0;
+        transform: rotate(135deg);
+    }
+    .active{
+        transform: translateX(0px);
+        background: mediumslateblue;
+    }
+    
 }
