@@ -200,6 +200,8 @@ h2 {
     cursor: pointer;
 }
 .search-images-list{
+    padding: 0;
+    margin: 0;
     list-style-type: none;
     display: flex;
     align-items: center;
@@ -347,6 +349,26 @@ h2 {
 }
 
 
+@media only screen and (min-width:576px) and (max-width:768px){
+    .container{
+        max-width: 728px;
+    }
+    .nav-info__item:not(:last-child){
+        margin-right: 20px;
+    }
+    .nav-page__item:not(:last-child){
+        margin-right: 20px;
+    }
+    .search-section{
+        flex-direction: column;
+    }
+    .site-logo__link{
+        margin-bottom: 40px;
+    }
+    .search-wrapper{
+        margin-bottom: 20px;
+    }
+}
 
 @media only screen and (max-width:575px){
     .container{
