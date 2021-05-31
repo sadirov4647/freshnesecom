@@ -349,9 +349,6 @@ h2 {
 }
 
 /* RECEPIES SECTION */
-.same-section{
-    padding: 64px 0;
-}
 .section__list{
     padding: 0;
     margin: 0;
@@ -460,14 +457,14 @@ h2 {
     border-radius: 12px;
 }
 .best-products__item:not(:last-child){
-    margin-right: 30px;
+    margin-right: 28px;
 }
 .product__card--image{
     width: 237px;
     height: 180px;
 }
 .product__card--image{
-    background-color: silver;
+    background-color: #F9F9F9;
     width: 237px;
     height: 180px;
     border-radius: 12px;
@@ -488,6 +485,17 @@ h2 {
     font-weight: 600;
     font-size: 18px;
     line-height: 27px;
+}
+.discount__wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.card__discount{
+    margin: 0;
+    font-weight: 600;
+    line-height: 18px;
+    text-decoration-line: line-through;
+    color: #A9A9A9;
 }
 .card__buy--btn{
     font-family: var(--heading-fonts-stack);
@@ -510,17 +518,19 @@ h2 {
 /* CUSTOMERS SECTION */
 .same-section{
     font-family: var(--heading-fonts-stack);
+    padding: 64px 0;
 }
-.customers__header{
+.section__header{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 40px;
 }
-.customers__header--title{
+.section__header--title{
     margin: 0;
 }
-.customers__header--btn{
+.section__header--btn{
     display: flex;
     align-items: center;
     padding: 6px 12px;
@@ -531,6 +541,7 @@ h2 {
     line-height: 22px;
     cursor: pointer;
     background: #fff;
+    white-space: nowrap;
 }
 .btn__arrow--img{
     margin-left: 12px;
@@ -572,6 +583,144 @@ h2 {
     margin: 0 auto;
     margin-top: 16px;
 }
+.headline__list{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* BLOG SORT */
+.blog-sorts{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.blog-sorts__link{
+    display: block;
+}
+.dinner__wrapper{
+    margin-right: 32px;
+}
+.dinner-tips__wrapper{
+    max-width: 380px;
+    position: absolute;
+    padding: 24px;
+    left: 0;
+    top: 0;
+}
+.dinner-tips__tag{
+    display: inline-block;
+    color: var(--btn-color);
+    padding: 8px;
+    background-color: #fff;
+    border-radius: 12px;
+    text-decoration: none;
+    margin-bottom: 176px;
+}
+.dinner-tips__tag:hover{
+    color: var(--titles-color);
+}
+.dinner-tips__title{
+    font-family: var(--heading-fonts-stack);
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+}
+.dinner-tips__title a{
+    text-decoration: none;
+    color: #fff;
+}
+.dinner-tips__title a:hover{
+    text-decoration: underline;
+}
+.blog-sorts__link img{
+    border-radius: 12px;
+}
+.blog-sorts__author{
+    margin-right: 16px;
+}
+
+.blog-sorts__description{
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+.blog-sorts__description::before{
+    content: "";
+    background: url(/images/blog/author.png) no-repeat;
+    width: 32px;
+    height: 32px;
+    background-size: contain;
+    margin-right: 8px;
+}
+
+.column-sorts{
+    max-width: 269px;
+    margin-right: 30px;
+}
+.column-sorts__image{
+    display: inline-block;
+    margin-bottom: 24px;
+}
+.column__description{
+    color: var(--titles-color);
+}
+.vagetables__tag{
+    display: inline-block;
+    color: var(--btn-color);
+    padding: 8px;
+    background-color: #F4F8EC;
+    border-radius: 12px;
+    text-decoration: none;
+    margin-bottom: 8px;
+}
+.vagetables__tag:hover{
+    color: var(--titles-color);
+}
+.column__description::before{
+    content: "";
+    display: none;
+}
+.grid__list{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.grid__item{
+    display: flex;
+    align-items: center;
+}
+
+.grid__description::before{
+    content: "";
+    display: none;
+}
+.grid-sorts__wrapper{
+    max-width: 249px;
+    margin-right: 24px;
+}
+.grid-sorts__title a{
+    text-decoration: none;
+    color: #151515;
+    font-family: var(--heading-fonts-stack);
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+}
+.grid-sorts__title a:hover{
+    text-decoration: underline;
+}
+.grid__description{
+    color: var(--titles-color);
+}
+
+
+
+
 
 @media only screen and (min-width:576px) and (max-width:768px){
     .container{
@@ -772,6 +921,29 @@ h2 {
     .active{
         transform: translateX(0px);
         background: rgb(104, 229, 238);
+    }
+
+
+    .best-products__item{
+        margin-bottom: 30px;
+    }
+    .best-products__item:not(:last-child){
+        margin-right: 0;
+    }
+    .recepies__item{
+        margin-bottom: 30px;
+    }
+    .recepies__item:first-child{
+        margin-right: 0;
+    }
+    .recepies__item:not(:last-child){
+        margin-right: 0;
+    }
+    .grid__item:not(:last-child){
+        margin-bottom: 32px;
+    }
+    .dinner-tips__tag{
+        margin-bottom: 136px;
     }
     
 }
