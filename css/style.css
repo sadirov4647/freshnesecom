@@ -766,6 +766,39 @@ h2 {
     }
 }
 
+@media only screen and (min-width:768px) and (max-width:900px){
+    .search-images-list{
+        margin-left: 300px;
+        margin-top: 30px;
+    }
+    .recepies__list{
+        justify-content: center;
+    }
+    .recepies__item:not(:last-child){
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    .best-products__item:not(:last-child) {
+        margin-right: 10px;
+    }
+    .headline__list{
+        justify-content: space-between;
+    }
+    .headline__list .best-products__item{
+        margin-bottom: 30px;
+    }
+    .blog-sorts{
+        justify-content: space-between;
+    }
+    .dinner__wrapper{
+        margin-right: auto;
+        margin-bottom: 30px;
+    }
+    .column-sorts{
+        margin-right: 0;
+    }
+}
+
 @media only screen and (max-width:575px){
     .container{
         max-width: 535px;
