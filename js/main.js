@@ -42,3 +42,5 @@ document.querySelector('.search-btn').addEventListener('click', () => {
     document.querySelector('.search-btn').style.display = "none";
 })
 
+
+

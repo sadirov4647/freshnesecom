@@ -741,6 +741,29 @@ h2 {
     .search-wrapper{
         margin-bottom: 20px;
     }
+    .recepies__list{
+        justify-content: center;
+    }
+    .best-products__item{
+        margin-bottom: 30px;
+    }
+    .best-products__item:not(:last-child){
+        margin-right: 0;
+    }
+    .headline__list{
+        justify-content: space-between;
+    }
+    .headline__list .best-products__item:not(:last-child){
+        margin-right: 30px;
+    }
+    .dinner__wrapper{
+        margin-bottom: 30px;
+    }
+
+    .recepies__item:not(:last-child){
+        margin-bottom: 30px;
+        margin-right: 0;
+    }
 }
 
 @media only screen and (max-width:575px){
@@ -922,13 +945,25 @@ h2 {
         transform: translateX(0px);
         background: rgb(104, 229, 238);
     }
+    
 
-
+    .recepies__list{
+        justify-content: center;
+    }
+    .best-products__list{
+        justify-content: center;
+    }
+    .headline__list{
+        justify-content: center;
+    }
     .best-products__item{
         margin-bottom: 30px;
     }
     .best-products__item:not(:last-child){
         margin-right: 0;
+    }
+    .best-products__item:first-child{
+        margin-right: 40px;
     }
     .recepies__item{
         margin-bottom: 30px;
@@ -945,5 +980,39 @@ h2 {
     .dinner-tips__tag{
         margin-bottom: 136px;
     }
+    .customers__carousel--list{
+        max-width: 90%;
+    }
+    .blog-sorts{
+        justify-content: center;
+    }
+    .blog-sorts__link{
+        margin-bottom: 30px;
+    }
+    .column-sorts{
+        margin-bottom: 30px;
+    }
     
+    
+}
+
+@media only screen and (min-width:320px) and (max-width:465px) {
+    .dinner-tips__tag{
+        margin-bottom: 50px;
+    }
+    .dinner-tips__wrapper{
+        padding: 10px;
+    }
+}
+
+@media only screen and (min-width:576px) and (max-width:630px) {
+    .blog-sorts{
+        justify-content: center;
+    }
+    .column-sorts{
+        margin-bottom: 30px;
+    }
+    .dinner-tips__wrapper{
+        left: 20px;
+    }
 }
