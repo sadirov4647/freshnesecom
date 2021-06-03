@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fruit</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- Site Header -->
+    <header class="site-header">
+        <div class="site-header__container container">
+            
+            <nav class="site-nav">
+                <a class="burger-btn openMenu"><span class="lines"></span></a>
+                <ul class="nav-info__list">
+                    <li class="nav-info__item"><a href="#" class="active-link">Chat with us</a></li>
+                    <li class="nav-info__item"><a href="tel" class="nav-black">+420 336 775 664</a></li>
+                    <li class="nav-info__item"><a href="info@freshnesecom.com"
+                        class="nav-black">info@freshnesecom.com</a></li>
+                    </ul>
+                    
+                    <ul class="nav-page__list">
+                        <li class="nav-page__item"><a href="#" class="active-link">Blog</a></li>
+                        <li class="nav-page__item"><a href="#" class="active-link">About Us</a></li>
+                        <li class="nav-page__item"><a href="#" class="active-link">Careers</a></li>
+                    </ul>
+                </nav>
+                
+                <!-- Search section -->
+                <section class="search-section">
+                    <a class="site-logo__link" href="#"><img class="site-logo" src="/images/header/sitelogo.svg"
+                        alt="site logo" width="177" height="18"></a>
+                        <div class="search-wrapper">
+                            <form class="search-form" action="select1.php" method="post">
+                                <select class="search-select" name="hero[]">
+                                    <option disabled>Выберите героя</option>
+                                    <option value="Чебурашка">Чебурашка</option>
+                                    <option selected value="Крокодил Гена">All categories</option>
+                                    <option value="Шапокляк">Шапокляк</option>
+                                    <option value="Крыса Лариса">Крыса Лариса</option>
+                                </select>
+                                <input class="search-input" type="search" placeholder="Search Products, categories ...">
+                                <button class="search-btn" type="button"><img src="/images/header/search.png"
+                                    alt="search button" width="16" height="16"></button>
+                                </form>
+                            </div>
+                            <ul class="search-images-list">
+                                <li class="search-images__item"><a href="#"><img src="/images/header/userimg.svg" alt="user image" width="24" height="24"></a></li>
+                                <li class="search-images__item"><a href="#"><img src="/images/header/basket.svg" alt="user image" width="24" height="24"></a></li>
+                            </ul>
+                        </section>
+                    </div>
+                    
+                    <!-- Choose section -->
+                    <section class="choose-section">
+                        <h2 class="visually-hidden"></h2>
+                        <div class="choose-section__container container">
+                            <ul class="choose-section__list">
+                                <li class="choose-section__item"><a href="#">Bakery</a>
+                                    <ul class="hover-list">
+                                        <li class="hover-item"><a href="#">Bakery</a></li>
+                                        <li class="hover-item"><a href="#">Bakery</a></li>
+                                        <li class="hover-item"><a href="#">Bakery</a></li>
+                                        <li class="hover-item"><a href="#">Bakery</a></li>
+                                    </ul>
+                                </li>
+                                
+                                <li class="choose-section__item"><a href="#">Fruit and vegetables</a>
+                                    <ul class="hover-list">
+                                        <li class="hover-item"><a href="#">Bakery</a></li>
+                                        <li class="hover-item"><a href="#">Bakery</a></li>
+                                        <li class="hover-item"><a href="#">Bakery</a></li>
+                                        <li class="hover-item"><a href="#">Bakery</a></li>
+                                    </ul>
+                                </li>
+                                
+                                <li class="choose-section__item"><a href="#">Meat and fish</a>
+                                    <ul class="hover-list">
+                                        <li class="hover-item"><a href="#">Bakery</a></li>
+                                        <li class="hover-item"><a href="#">Bakery</a></li>
+                                        <li class="hover-item"><a href="#">Bakery</a></li>
+                                        <li class="hover-item"><a href="#">Bakery</a></li>
+                                    </ul>
+                                </li>
+                                
+                                <li class="choose-section__item"><a href="#">Drinks</a>
+                                    <ul class="hover-list">
+                                        <li class="hover-item"><a href="#">Bakery</a></li>
+                                        <li class="hover-item"><a href="#">Bakery</a></li>
+                                        <li class="hover-item"><a href="#">Bakery</a></li>
+                                        <li class="hover-item"><a href="#">Bakery</a></li>
+                                    </ul>
+                                </li>
+                                
+                                <li class="choose-section__item"><a href="#">Kitchen</a>
+                                    <ul class="hover-list">
+                                        <li class="hover-item"><a href="#">Bakery</a></li>
+                                        <li class="hover-item"><a href="#">Bakery</a></li>
+                                        <li class="hover-item"><a href="#">Bakery</a></li>
+                                        <li class="hover-item"><a href="#">Bakery</a></li>
+                                    </ul>
+                                </li>
+                                
+                                <li class="choose-section__item"><a href="#">Special nutrition</a>
+                                    <ul class="hover-list">
+                                        <li class="hover-item"><a href="#">Bakery</a></li>
+                                        <li class="hover-item"><a href="#">Bakery</a></li>
+                                        <li class="hover-item"><a href="#">Bakery</a></li>
+                                        <li class="hover-item"><a href="#">Bakery</a></li>
+                                    </ul>
+                                </li>
+                                
+                                <li class="choose-section__item"><a href="#">Baby</a>
+                                    <ul class="hover-list">
+                                        <li class="hover-item"><a href="#">Bakery</a></li>
+                                        <li class="hover-item"><a href="#">Bakery</a></li>
+                                        <li class="hover-item"><a href="#">Bakery</a></li>
+                                        <li class="hover-item"><a href="#">Bakery</a></li>
+                                    </ul>
+                                </li>
+                                
+                                <li class="choose-section__item"><a href="#">Pharmacy</a>
+                                    <ul class="hover-list">
+                                        <li class="hover-item"><a href="#">Bakery</a></li>
+                                        <li class="hover-item"><a href="#">Bakery</a></li>
+                                        <li class="hover-item"><a href="#">Bakery</a></li>
+                                        <li class="hover-item"><a href="#">Bakery</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </header>
+                
+                <div class="container">
+                    <ul class="page__links--list">
+                        <li class="page__items"><a href="#">Homepage /</a></li>
+                        <li class="page__items"><a href="#">Fruit and vegetables</a></li>
+                    </ul>
+                    
+                    <div class="view-sorts">
+                        <h1 class="view-sorts__title">Fruit and vegetables</h1>
+                        <ul class="view__list">
+                            <li class="view__item"><button class="view__btn" type="button">Grid view<img class="view__btn--img" src="/images/fruit/grid.png" alt="grid view" width="14" height="14"></button></li>
+                            <li class="view__item"><button class="view__btn" type="button">List view<img class="view__btn--img" src="/images/fruit/list.png" alt="grid view" width="14" height="14"></button></li>
+                            <li class="view__item"><span class="view__products--number">117</span><a class="view__products" href="#">Products</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="view__features">
+                        <form class="view__form" action="">
+                            <div class="filtre-text__wrapper">
+                                <label for="filtre">
+                                    <input type="radio" name="filtre" id="filtre">
+                                    Filtre text
+                                </label> 
+                                <label for="filtre-second">
+                                    <input type="radio" name="filtre" id="filtre-second">
+                                    Filtre text
+                                </label>
+                            </div>
+                            
+                            <div class="check-filter__wrapper">
+                                <label class="check-filtre" for="check-filtre">
+                                    <input type="checkbox" id="check-filtre" name="check-filtre">
+                                    Filtre
+                                    <span class="check-nbm">nbm</span>
+                                </label>
+                            </div>
+                            
+                            <div class="check-filter__wrapper">
+                                <label class="check-filtre" for="check-filtre__second">
+                                    <input type="checkbox" id="check-filtre__second" name="check-filtre">
+                                    Filtre
+                                    <span class="check-nbm">nbm</span>
+                                </label>
+                            </div>
+                            
+                            <div class="check-filter__wrapper">
+                                <label class="check-filtre check-filtre__third" for="check-filtre__third">
+                                    <input type="checkbox" id="check-filtre__third" name="check-filtre">
+                                    Filtre
+                                    <span class="check-nbm">12</span>
+                                </label>
+                                
+                                <select class="check-filter__wrapper--select" name="hero[]">
+                                    <option disabled>Выберите героя</option>
+                                    <option value="Чебурашка">Чебурашка</option>
+                                    <option selected value="Крокодил Гена">Select</option>
+                                    <option value="Шапокляк">Шапокляк</option>
+                                    <option value="Крыса Лариса">Крыса Лариса</option>
+                                </select>
+                            </div>
+                            
+                            
+                        </form>
+                        
+                        
+                    </div>
+                    
+                    <ul class="selected-filtres__list">
+                        <li class="selected-filtres__items"><p>Applied filtres:</p></li>
+                        <li class="selected-filtres__items">
+                            <p class="selected-filtres--para">Selected Filtre</p>
+                            <button class="exit__button" type="button"><img src="/images/fruit/exit.png" alt="exit button" width="12" height="12"></button>
+                        </li>
+                        <li class="selected-filtres__items">
+                            <p class="selected-filtres--para">Selected Filtre</p>
+                            <button class="exit__button" type="button"><img src="/images/fruit/exit.png" alt="exit button" width="12" height="12"></button>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="container">
+                    <div class="vagetables-main">
+                        <section class="left-section">
+                            <div class="left__name categories-name">
+                                <h2 class="left__titles categories__title">Categories</h2>
+                                <ul class="left__list categories__list">
+                                    <li class="left__item categories__item">
+                                        <p class="categories__item--title">Category name</p>
+                                        <span class="categories__item--number">320</span>
+                                    </li>
+                                    <li class="left__item categories__item">
+                                        <p class="categories__item--title">Category name</p>
+                                        <span class="categories__item--number">112</span>
+                                    </li>
+                                    <li class="left__item categories__item">
+                                        <p class="categories__item--title">Category name</p>
+                                        <span class="categories__item--number">32</span>
+                                    </li>
+                                    <li class="left__item categories__item">
+                                        <p class="categories__item--title">Category name</p>
+                                        <span class="categories__item--number">48</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="left__name brands-name">
+                                <h2 class="left__titles categories__title">Brands</h2>
+                                <ul class="left__list brands__list">
+                                    <li class="left__item brand__item">
+                                        <label for="brand__checkbox">
+                                            <input type="checkbox" id="brand__checkbox" name="brand__checkbox">
+                                            Filtre by brand item
+                                        </label>
+                                    </li>
+                                    <li class="left__item brand__item">
+                                        <label for="brand__checkbox--second">
+                                            <input type="checkbox" id="brand__checkbox--second" name="brand__checkbox">
+                                            Filtre by brand item
+                                        </label>
+                                    </li>
+                                    <li class="left__item brand__item">
+                                        <label for="brand__checkbox--third">
+                                            <input type="checkbox" id="brand__checkbox--third" name="brand__checkbox">
+                                            Filtre by brand item
+                                        </label>
+                                    </li>
+                                    <li class="left__item brand__item">
+                                        <label for="brand__checkbox--fourth">
+                                            <input type="checkbox" id="brand__checkbox--fourth" name="brand__checkbox">
+                                            Filtre by brand item
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="left__name rating-name">
+                                <h2 class="left__titles rating__title">Rating</h2>
+                                <form class="rating__form" method="POST" id="form1">
+                                    <label for="rating__checkbox--five">
+                                        <input type="checkbox" id="rating__checkbox--five" name="brand__checkbox">
+                                    </label>
+                                    
+
+                                    <label class="four-star" for="rating__checkbox--four">
+                                        <input type="checkbox" id="rating__checkbox--four" name="brand__checkbox">
+                                    </label>
+                                    
+
+                                    <label class="three-star" for="rating__checkbox--three">
+                                        <input type="checkbox" id="rating__checkbox--three" name="brand__checkbox">
+                                    </label>
+                                    
+
+                                    <label class="two-star" for="rating__checkbox--two">
+                                        <input type="checkbox" id="rating__checkbox--two" name="brand__checkbox">
+                                    </label>
+                                
+
+                                    <label class="one-star" for="rating__checkbox--one">
+                                        <input type="checkbox" id="rating__checkbox--one" name="brand__checkbox">
+                                    </label>
+                                    
+                                  </form>
+                            </div>
+                        </section>
+
+                        <section class="main-section"></section>
+                    </div>
+                </div>
+                
+                
+                
+                
+                
+                <footer class="site__footer">
+                    <div class="footer__container container">
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <h3 class="footer__item--title">Get in touch</h3>
+                                <ul class="footer__links--list touch__list">
+                                    <li class="footer__links--item"><a href="#about.html">About Us</a></li>
+                                    <li class="footer__links--item"><a href="#careers.html">Careers</a></li>
+                                    <li class="footer__links--item"><a href="#">Press Relaeses</a></li>
+                                    <li class="footer__links--item"><a href="#blog.html">Blog</a></li>
+                                </ul>
+                            </li>
+                            <li class="footer__item">
+                                <h3 class="footer__item--title">Connections</h3>
+                                <ul class="footer__links--list connections__list">
+                                    <li class="footer__links--item"><a href="#">Facebook</a></li>
+                                    <li class="footer__links--item"><a href="#">Twitter</a></li>
+                                    <li class="footer__links--item"><a href="#">Instagram</a></li>
+                                    <li class="footer__links--item"><a href="#">Youtube</a></li>
+                                    <li class="footer__links--item"><a href="#">Linkedin</a></li>
+                                </ul>
+                            </li>
+                            <li class="footer__item">
+                                <h3 class="footer__item--title">Earnings</h3>
+                                <ul class="footer__links--list earnings__list">
+                                    <li class="footer__links--item"><a href="#">Become an Affiliate</a></li>
+                                    <li class="footer__links--item"><a href="#">Advertise your product</a></li>
+                                    <li class="footer__links--item"><a href="#">Sell on Market</a></li>
+                                </ul>
+                            </li>
+                            <li class="footer__item">
+                                <h3 class="footer__item--title">Account</h3>
+                                <ul class="footer__links--list account__list">
+                                    <li class="footer__links--item"><a href="#">Your account</a></li>
+                                    <li class="footer__links--item"><a href="#">Returns Centre</a></li>
+                                    <li class="footer__links--item"><a href="#">100 % purchase protection</a></li>
+                                    <li class="footer__links--item"><a href="#">Chat with us</a></li>
+                                    <li class="footer__links--item"><a href="#">Help</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        
+                        <div class="footer__tags">
+                            <h3 class="footer__tags--title">Product tags</h3>
+                            <ul class="footer__tags--list">
+                                <li class="footer__tags--item"><a href="#">Beans</a></li>
+                                <li class="footer__tags--item"><a href="#">Carrots</a></li>
+                                <li class="footer__tags--item"><a href="#">Apples</a></li>
+                                <li class="footer__tags--item"><a href="#">Garlic</a></li>
+                                <li class="footer__tags--item"><a href="#">Mushrooms</a></li>
+                                <li class="footer__tags--item"><a href="#">Tomatoes</a></li>
+                                <li class="footer__tags--item"><a href="#">Chili peppers</a></li>
+                                <li class="footer__tags--item"><a href="#">Brocoli</a></li>
+                                <li class="footer__tags--item"><a href="#">Watermelons</a></li>
+                                <li class="footer__tags--item"><a href="#">Oranges</a></li>
+                                <li class="footer__tags--item"><a href="#">Bananas</a></li>
+                                <li class="footer__tags--item"><a href="#">Grapes</a></li>
+                                <li class="footer__tags--item"><a href="#">Cherries</a></li>
+                                <li class="footer__tags--item"><a href="#">Meat</a></li>
+                                <li class="footer__tags--item"><a href="#">Seo tag</a></li>
+                                <li class="footer__tags--item"><a href="#">Fish</a></li>
+                                <li class="footer__tags--item"><a href="#">Seo tag</a></li>
+                                <li class="footer__tags--item"><a href="#">Fresh food</a></li>
+                                <li class="footer__tags--item"><a href="#">Lemons</a></li>
+                            </ul>
+                            <span class="copyright">Copyright © 2020 petrbilek.com</span>
+                        </div>
+                    </div>
+                </footer>
+                <script src="/js/main.js"></script>
+            </body>
+            </html>
