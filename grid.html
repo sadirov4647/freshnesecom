@@ -1,20 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>fruit</title>
+    <title>grid</title>
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
-
 <body>
-    <!-- Site Header -->
     <header class="site-header">
         <div class="site-header__container container">
             
@@ -139,11 +134,10 @@
                         </div>
                     </section>
                 </header>
-                
                 <div class="container">
                     <ul class="page__links--list">
-                        <li class="page__items"><a class="page__links--active" href="#">Fruit and vegetables</a></li>
-                        <li class="page__items"><a class="page__new--page" href="#">Homepage</a></li>
+                        <li class="page__items"><a href="#">Homepage /</a></li>
+                        <li class="page__items"><a href="#">Fruit and vegetables</a></li>
                     </ul>
                     
                     <div class="view-sorts">
@@ -218,6 +212,8 @@
                         </li>
                     </ul>
                 </div>
+                
+                
                 
                 <div class="container">
                     <div class="vagetables-main">
@@ -303,7 +299,7 @@
                                     
                                 </form>
                             </div>
-
+                            
                             <div class="range">
                                 <h2 class="sidebar-title">Price</h2>
                                 <div class="range-slide">
@@ -322,7 +318,7 @@
                                     <p class="max">Max
                                         <span id="max">000</span>
                                     </p>
-            
+                                    
                                 </div>
                                 <div class="reset">
                                     <button class="btn btn-apply">Apply</button>
@@ -331,284 +327,191 @@
                             </div>
                         </section>
                         
-                        <section class="main-section">
-                            <ul class="products__listview--list">
-                                <li class="products__listview--item">
-                                    <div class="products__image">
-                                        <img src="" alt="products-image">
-                                    </div>
-                                    <div class="products__info">
-                                        <div class="products__description">
-                                            <div class="products__rate">
-                                                <h3 class="products__rate--title">Product title</h3>
-                                                <p class="products__rate--para">Space for a small product description</p>
-                                                <img class="products__rate--img" src="/images/fruit/black-rating/black-stars.png" alt="product rating" width="108" height="20">
-                                            </div>
-                                            <div class="products__cost">
-                                                <div class="products__cost--wrapper">
-                                                    <p class="products__real-cost">36.99 USD</p>
-                                                    <span class="products__discount">48.56</span>
-                                                </div>
-                                                <div class="products-arrive">
-                                                    <p class="shipping">Free Shipping</p>
-                                                    <span class="delivery__deadline">Delivery in 1 day</span>
-                                                </div>
-                                            </div>
+                        
+                        <div class="main-grid__section">
+                            <ul class="vagetables-main__grid">
+                                <li class="best-products__item with-discount-star main-grid__item">
+                                    <div class="best-product__card">
+                                        <div class="product__card--image">
+                                            <a href="#">
+                                                <span class="top-discount">- 36 %</span>
+                                                <img class="best-product__image" src="" alt="product image" width="237"
+                                                height="180">
+                                            </a>
                                         </div>
-
-                                        <div class="products__origin">
-                                            <ul class="products__origin--list">
-                                                <li class="products__origin--item">
-                                                    <ul class="origin-info__side">
-                                                        <li class="origin-info__side--item">
-                                                            <p class="origin-sort origin-cleanless">Fresheness</p>
-                                                            <p class="cleanless__definition important-info">New <span>(Extra fresh)</span></p>
-                                                        </li>
-                                                        <li class="origin-info__side--item">
-                                                            <p class="origin-sort origin-farm">Farm</p>
-                                                            <p class="farm__definition">Grocery Tarm Fields</p>
-                                                        </li>
-                                                        <li class="origin-info__side--item">
-                                                            <p class="origin-sort origin-delivery">Delivery</p>
-                                                            <p class="delivery__definition">Europe</p>
-                                                        </li>
-                                                        <li class="origin-info__side--item">
-                                                            <p class="origin-sort origin-stock">Stock</p>
-                                                            <p class="stock__definition important-info">320 pcs</p>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-
-                                                <li class="porducts__origin--item products__like--item">
-                                                    <a class="more-link product-detail__btn" href="#">Product Detail</a>
-                                                    <p class="wish-list"><span class="like-span"><img src="/images/fruit/product/like.png" alt="like" width="12" height="12"></span>Add to wish list</p>
-                                                </li>
-                                            </ul>
+                                        <h3 class="card__title">Product Title</h3>
+                                        <p class="card__description">Space for a small product description</p>
+                                        <img class="products__rate--img" src="/images/fruit/black-rating/black-stars.png" alt="product rating" width="108" height="20">
+                                        <div class="card__buy--wrapper">
+                                            <span class="card__by--cost">1.48 USD</span>
+                                            <button class="card__buy--btn" type="button">Buy now</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                
+                                <li class="best-products__item with-discount main-grid__item">
+                                    <div class="best-product__card">
+                                        <div class="product__card--image">
+                                            <a href="#">
+                                                <span class="top-discount">- 36 %</span>
+                                                <img class="best-product__image" src="" alt="product image" width="237"
+                                                height="180">
+                                            </a>
+                                        </div>
+                                        <h3 class="card__title">Product Title</h3>
+                                        <p class="card__description">Space for a small product description</p>
+                                        <div class="card__buy--wrapper">
+                                            <span class="card__by--cost">1.48 USD</span>
+                                            <button class="card__buy--btn" type="button">Buy now</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                
+                                <li class="best-products__item with-star main-grid__item">
+                                    <div class="best-product__card">
+                                        <div class="product__card--image">
+                                            <a href="#">
+                                                <span class="top-discount">- 36 %</span>
+                                                <img class="best-product__image" src="" alt="product image" width="237"
+                                                height="180">
+                                            </a>
+                                        </div>
+                                        <h3 class="card__title">Product Title</h3>
+                                        <p class="card__description">Space for a small product description</p>
+                                        <img class="products__rate--img" src="/images/fruit/black-rating/black-stars.png" alt="product rating" width="108" height="20">
+                                        <div class="card__buy--wrapper">
+                                            <span class="card__by--cost">1.48 USD</span>
+                                            <button class="card__buy--btn" type="button">Buy now</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                
+                                <li class="best-products__item with-discount main-grid__item">
+                                    <div class="best-product__card">
+                                        <div class="product__card--image">
+                                            <a href="#">
+                                                <span class="top-discount">- 36 %</span>
+                                                <img class="best-product__image" src="" alt="product image" width="237"
+                                                height="180">
+                                            </a>
+                                        </div>
+                                        <h3 class="card__title">Product Title</h3>
+                                        <p class="card__description">Space for a small product description</p>
+                                        <div class="card__buy--wrapper">
+                                            <span class="card__by--cost">1.48 USD</span>
+                                            <button class="card__buy--btn" type="button">Buy now</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                
+                                <li class="best-products__item with-discount-star main-grid__item">
+                                    <div class="best-product__card">
+                                        <div class="product__card--image">
+                                            <a href="#">
+                                                <span class="top-discount">- 36 %</span>
+                                                <img class="best-product__image" src="" alt="product image" width="237"
+                                                height="180">
+                                            </a>
+                                        </div>
+                                        <h3 class="card__title">Product Title</h3>
+                                        <p class="card__description">Space for a small product description</p>
+                                        <img class="products__rate--img" src="/images/fruit/black-rating/black-stars.png" alt="product rating" width="108" height="20">
+                                        <div class="card__buy--wrapper">
+                                            <span class="card__by--cost">1.48 USD</span>
+                                            <button class="card__buy--btn" type="button">Buy now</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                
+                                <li class="best-products__item with-star main-grid__item">
+                                    <div class="best-product__card">
+                                        <div class="product__card--image">
+                                            <a href="#">
+                                                <span class="top-discount">- 36 %</span>
+                                                <img class="best-product__image" src="" alt="product image" width="237"
+                                                height="180">
+                                            </a>
+                                        </div>
+                                        <h3 class="card__title">Product Title</h3>
+                                        <p class="card__description">Space for a small product description</p>
+                                        <img class="products__rate--img" src="/images/fruit/black-rating/black-stars.png" alt="product rating" width="108" height="20">
+                                        <div class="card__buy--wrapper">
+                                            <div class="card-discount__cost">
+                                                <span class="card__by--cost">1.48 USD</span>
+                                                <span class="products__discount">48.56</span>
+                                            </div>
+                                            <button class="card__buy--btn" type="button">Buy now</button>
                                         </div>
                                     </div>
                                 </li>
 
-                                <li class="products__listview--item">
-                                    <div class="products__image">
-                                        <img src="" alt="products-image">
-                                    </div>
-                                    <div class="products__info">
-                                        <div class="products__description">
-                                            <div class="products__rate">
-                                                <h3 class="products__rate--title">Product title</h3>
-                                                <p class="products__rate--para">Space for a small product description</p>
-                                                <img class="products__rate--img" src="/images/fruit/black-rating/black-stars.png" alt="product rating" width="108" height="20">
-                                            </div>
-                                            <div class="products__cost">
-                                                <div class="products__cost--wrapper">
-                                                    <p class="products__real-cost">36.99 USD</p>
-                                                    <span class="products__discount">48.56</span>
-                                                </div>
-                                                <div class="products-arrive">
-                                                    <p class="shipping">Free Shipping</p>
-                                                    <span class="delivery__deadline">Delivery in 1 day</span>
-                                                </div>
-                                            </div>
+                                <li class="best-products__item with-star main-grid__item">
+                                    <div class="best-product__card">
+                                        <div class="product__card--image">
+                                            <a href="#">
+                                                <span class="top-discount">- 36 %</span>
+                                                <img class="best-product__image" src="" alt="product image" width="237"
+                                                height="180">
+                                            </a>
                                         </div>
-
-                                        <div class="products__origin">
-                                            <ul class="products__origin--list">
-                                                <li class="products__origin--item">
-                                                    <ul class="origin-info__side">
-                                                        <li class="origin-info__side--item">
-                                                            <p class="origin-sort origin-cleanless">Fresheness</p>
-                                                            <p class="cleanless__definition important-info">New <span>(Extra fresh)</span></p>
-                                                        </li>
-                                                        <li class="origin-info__side--item">
-                                                            <p class="origin-sort origin-farm">Farm</p>
-                                                            <p class="farm__definition">Grocery Tarm Fields</p>
-                                                        </li>
-                                                        <li class="origin-info__side--item">
-                                                            <p class="origin-sort origin-delivery">Delivery</p>
-                                                            <p class="delivery__definition">Europe</p>
-                                                        </li>
-                                                        <li class="origin-info__side--item">
-                                                            <p class="origin-sort origin-stock">Stock</p>
-                                                            <p class="stock__definition important-info">320 pcs</p>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-
-                                                <li class="porducts__origin--item products__like--item">
-                                                    <a class="more-link product-detail__btn" href="#">Product Detail</a>
-                                                    <p class="wish-list"><span class="like-span"><img src="/images/fruit/product/like.png" alt="like" width="12" height="12"></span>Add to wish list</p>
-                                                </li>
-                                            </ul>
+                                        <h3 class="card__title">Product Title</h3>
+                                        <p class="card__description">Space for a small product description</p>
+                                        <img class="products__rate--img" src="/images/fruit/black-rating/black-stars.png" alt="product rating" width="108" height="20">
+                                        <div class="card__buy--wrapper">
+                                            <div class="card-discount__cost">
+                                                <span class="card__by--cost">1.48 USD</span>
+                                                <span class="products__discount">48.56</span>
+                                            </div>
+                                            <button class="card__buy--btn" type="button">Buy now</button>
                                         </div>
                                     </div>
                                 </li>
 
-                                <li class="products__listview--item">
-                                    <div class="products__image">
-                                        <img src="" alt="products-image">
-                                    </div>
-                                    <div class="products__info">
-                                        <div class="products__description">
-                                            <div class="products__rate">
-                                                <h3 class="products__rate--title">Product title</h3>
-                                                <p class="products__rate--para">Space for a small product description</p>
-                                                <img class="products__rate--img" src="/images/fruit/black-rating/black-stars.png" alt="product rating" width="108" height="20">
-                                            </div>
-                                            <div class="products__cost">
-                                                <div class="products__cost--wrapper">
-                                                    <p class="products__real-cost">36.99 USD</p>
-                                                    <span class="products__discount">48.56</span>
-                                                </div>
-                                                <div class="products-arrive">
-                                                    <p class="shipping">Free Shipping</p>
-                                                    <span class="delivery__deadline">Delivery in 1 day</span>
-                                                </div>
-                                            </div>
+                                <li class="best-products__item with-star main-grid__item">
+                                    <div class="best-product__card">
+                                        <div class="product__card--image">
+                                            <a href="#">
+                                                <span class="top-discount">- 36 %</span>
+                                                <img class="best-product__image" src="" alt="product image" width="237"
+                                                height="180">
+                                            </a>
                                         </div>
-
-                                        <div class="products__origin">
-                                            <ul class="products__origin--list">
-                                                <li class="products__origin--item">
-                                                    <ul class="origin-info__side">
-                                                        <li class="origin-info__side--item">
-                                                            <p class="origin-sort origin-cleanless">Fresheness</p>
-                                                            <p class="cleanless__definition important-info">New <span>(Extra fresh)</span></p>
-                                                        </li>
-                                                        <li class="origin-info__side--item">
-                                                            <p class="origin-sort origin-farm">Farm</p>
-                                                            <p class="farm__definition">Grocery Tarm Fields</p>
-                                                        </li>
-                                                        <li class="origin-info__side--item">
-                                                            <p class="origin-sort origin-delivery">Delivery</p>
-                                                            <p class="delivery__definition">Europe</p>
-                                                        </li>
-                                                        <li class="origin-info__side--item">
-                                                            <p class="origin-sort origin-stock">Stock</p>
-                                                            <p class="stock__definition important-info">320 pcs</p>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-
-                                                <li class="porducts__origin--item products__like--item">
-                                                    <a class="more-link product-detail__btn" href="#">Product Detail</a>
-                                                    <p class="wish-list"><span class="like-span"><img src="/images/fruit/product/like.png" alt="like" width="12" height="12"></span>Add to wish list</p>
-                                                </li>
-                                            </ul>
+                                        <h3 class="card__title">Product Title</h3>
+                                        <p class="card__description">Space for a small product description</p>
+                                        <img class="products__rate--img" src="/images/fruit/black-rating/black-stars.png" alt="product rating" width="108" height="20">
+                                        <div class="card__buy--wrapper">
+                                            <div class="card-discount__cost">
+                                                <span class="card__by--cost">1.48 USD</span>
+                                                <span class="products__discount">48.56</span>
+                                            </div>
+                                            <button class="card__buy--btn" type="button">Buy now</button>
                                         </div>
                                     </div>
                                 </li>
 
-                                <li class="products__listview--item">
-                                    <div class="products__image">
-                                        <img src="" alt="products-image">
-                                    </div>
-                                    <div class="products__info">
-                                        <div class="products__description">
-                                            <div class="products__rate">
-                                                <h3 class="products__rate--title">Product title</h3>
-                                                <p class="products__rate--para">Space for a small product description</p>
-                                                <img class="products__rate--img" src="/images/fruit/black-rating/black-stars.png" alt="product rating" width="108" height="20">
-                                            </div>
-                                            <div class="products__cost">
-                                                <div class="products__cost--wrapper">
-                                                    <p class="products__real-cost">36.99 USD</p>
-                                                    <span class="products__discount">48.56</span>
-                                                </div>
-                                                <div class="products-arrive">
-                                                    <p class="shipping">Free Shipping</p>
-                                                    <span class="delivery__deadline">Delivery in 1 day</span>
-                                                </div>
-                                            </div>
+                                <li class="best-products__item with-star main-grid__item">
+                                    <div class="best-product__card">
+                                        <div class="product__card--image">
+                                            <a href="#">
+                                                <span class="top-discount">- 36 %</span>
+                                                <img class="best-product__image" src="" alt="product image" width="237"
+                                                height="180">
+                                            </a>
                                         </div>
-
-                                        <div class="products__origin">
-                                            <ul class="products__origin--list">
-                                                <li class="products__origin--item">
-                                                    <ul class="origin-info__side">
-                                                        <li class="origin-info__side--item">
-                                                            <p class="origin-sort origin-cleanless">Fresheness</p>
-                                                            <p class="cleanless__definition important-info">New <span>(Extra fresh)</span></p>
-                                                        </li>
-                                                        <li class="origin-info__side--item">
-                                                            <p class="origin-sort origin-farm">Farm</p>
-                                                            <p class="farm__definition">Grocery Tarm Fields</p>
-                                                        </li>
-                                                        <li class="origin-info__side--item">
-                                                            <p class="origin-sort origin-delivery">Delivery</p>
-                                                            <p class="delivery__definition">Europe</p>
-                                                        </li>
-                                                        <li class="origin-info__side--item">
-                                                            <p class="origin-sort origin-stock">Stock</p>
-                                                            <p class="stock__definition important-info">320 pcs</p>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-
-                                                <li class="porducts__origin--item products__like--item">
-                                                    <a class="more-link product-detail__btn" href="#">Product Detail</a>
-                                                    <p class="wish-list"><span class="like-span"><img src="/images/fruit/product/like.png" alt="like" width="12" height="12"></span>Add to wish list</p>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <li class="products__listview--item">
-                                    <div class="products__image">
-                                        <img src="" alt="products-image">
-                                    </div>
-                                    <div class="products__info">
-                                        <div class="products__description">
-                                            <div class="products__rate">
-                                                <h3 class="products__rate--title">Product title</h3>
-                                                <p class="products__rate--para">Space for a small product description</p>
-                                                <img class="products__rate--img" src="/images/fruit/black-rating/black-stars.png" alt="product rating" width="108" height="20">
+                                        <h3 class="card__title">Product Title</h3>
+                                        <p class="card__description">Space for a small product description</p>
+                                        <img class="products__rate--img" src="/images/fruit/black-rating/black-stars.png" alt="product rating" width="108" height="20">
+                                        <div class="card__buy--wrapper">
+                                            <div class="card-discount__cost">
+                                                <span class="card__by--cost">1.48 USD</span>
+                                                <span class="products__discount">48.56</span>
                                             </div>
-                                            <div class="products__cost">
-                                                <div class="products__cost--wrapper">
-                                                    <p class="products__real-cost">36.99 USD</p>
-                                                    <span class="products__discount">48.56</span>
-                                                </div>
-                                                <div class="products-arrive">
-                                                    <p class="shipping">Free Shipping</p>
-                                                    <span class="delivery__deadline">Delivery in 1 day</span>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="products__origin">
-                                            <ul class="products__origin--list">
-                                                <li class="products__origin--item">
-                                                    <ul class="origin-info__side">
-                                                        <li class="origin-info__side--item">
-                                                            <p class="origin-sort origin-cleanless">Fresheness</p>
-                                                            <p class="cleanless__definition important-info">New <span>(Extra fresh)</span></p>
-                                                        </li>
-                                                        <li class="origin-info__side--item">
-                                                            <p class="origin-sort origin-farm">Farm</p>
-                                                            <p class="farm__definition">Grocery Tarm Fields</p>
-                                                        </li>
-                                                        <li class="origin-info__side--item">
-                                                            <p class="origin-sort origin-delivery">Delivery</p>
-                                                            <p class="delivery__definition">Europe</p>
-                                                        </li>
-                                                        <li class="origin-info__side--item">
-                                                            <p class="origin-sort origin-stock">Stock</p>
-                                                            <p class="stock__definition important-info">320 pcs</p>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-
-                                                <li class="porducts__origin--item products__like--item">
-                                                    <a class="more-link product-detail__btn" href="#">Product Detail</a>
-                                                    <p class="wish-list"><span class="like-span"><img src="/images/fruit/product/like.png" alt="like" width="12" height="12"></span>Add to wish list</p>
-                                                </li>
-                                            </ul>
+                                            <button class="card__buy--btn" type="button">Buy now</button>
                                         </div>
                                     </div>
                                 </li>
                             </ul>
-                        </section>
+                        </div>
                     </div>
 
                     <div class="products-page">
@@ -630,7 +533,6 @@
                         </ul>
                     </div>
                 </div>
-                
                 
                 
                 
@@ -704,6 +606,8 @@
                         </div>
                     </div>
                 </footer>
-                <script src="/js/main.js"></script>
+                
+                
+                <script src="/js/grid.js"></script>
             </body>
             </html>
