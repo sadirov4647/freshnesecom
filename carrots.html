@@ -7,6 +7,7 @@
     <title>Carrots Page</title>
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous"/>
 </head>
 <body>
     <header class="site-header">
@@ -136,13 +137,13 @@
                 
                 
                 <div class="container">
-                        <ul class="page__links--list">
-                            <li class="page__items"><a class="page__links--active" href="#">Fruit and vegetables</a></li>
-                            <li class="page__items"><a class="page__links--active" href="#">Homepage</a></li>
-                            <li class="page__items"><a class="page__new--page" href="#">Homepage</a></li>
-                        </ul>
+                    <ul class="page__links--list">
+                        <li class="page__items"><a class="page__links--active" href="#">Fruit and vegetables</a></li>
+                        <li class="page__items"><a class="page__links--active" href="#">Homepage</a></li>
+                        <li class="page__items"><a class="page__new--page" href="#">Homepage</a></li>
+                    </ul>
                 </div>
-
+                
                 <div class="container">
                     <div class="carrots">
                         <div class="carrots__image">
@@ -150,7 +151,115 @@
                         </div>
                         <div class="carrots__text">
                             <h1 class="carrots__title">Carrots from Tomissy Farm</h1>
-                            
+
+                            <div class="carrots__stars">
+                            <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <defs>
+                                  <symbol id="icon-star" viewBox="0 0 26 28">
+                                    <path d="M26 10.109c0 0.281-0.203 0.547-0.406 0.75l-5.672 5.531 1.344 7.812c0.016 0.109 0.016 0.203 0.016 0.313 0 0.406-0.187 0.781-0.641 0.781-0.219 0-0.438-0.078-0.625-0.187l-7.016-3.687-7.016 3.687c-0.203 0.109-0.406 0.187-0.625 0.187-0.453 0-0.656-0.375-0.656-0.781 0-0.109 0.016-0.203 0.031-0.313l1.344-7.812-5.688-5.531c-0.187-0.203-0.391-0.469-0.391-0.75 0-0.469 0.484-0.656 0.875-0.719l7.844-1.141 3.516-7.109c0.141-0.297 0.406-0.641 0.766-0.641s0.625 0.344 0.766 0.641l3.516 7.109 7.844 1.141c0.375 0.063 0.875 0.25 0.875 0.719z"></path>
+                                  </symbol>
+                                  <symbol id="icon-star-half" viewBox="0 0 13 28">
+                                    <path d="M13 0.5v20.922l-7.016 3.687c-0.203 0.109-0.406 0.187-0.625 0.187-0.453 0-0.656-0.375-0.656-0.781 0-0.109 0.016-0.203 0.031-0.313l1.344-7.812-5.688-5.531c-0.187-0.203-0.391-0.469-0.391-0.75 0-0.469 0.484-0.656 0.875-0.719l7.844-1.141 3.516-7.109c0.141-0.297 0.406-0.641 0.766-0.641v0z"></path>
+                                  </symbol>
+                                </defs>
+                              </svg>
+                              <div class="comment-stars">
+                              
+                                <input class="comment-stars-input" type="radio" name="rating" value="5" id="rating-5">
+                                <label class="comment-stars-view" for="rating-5"><svg class="icon icon-star">
+                                    <use xlink:href="#icon-star"></use>
+                                  </svg></label>
+                                <input class="comment-stars-input" type="radio" name="rating" value="4.5" id="rating-4.5" checked="checked"> <label class="comment-stars-view is-half" for="rating-4.5"><svg class="icon icon-star-half">
+                                    <use xlink:href="#icon-star-half"></use>
+                                  </svg></label>
+                                <input class="comment-stars-input" type="radio" name="rating" value="4" id="rating-4"> <label class="comment-stars-view" for="rating-4"><svg class="icon icon-star">
+                                    <use xlink:href="#icon-star"></use>
+                                  </svg></label>
+                                <input class="comment-stars-input" type="radio" name="rating" value="3.5" id="rating-3.5"> <label class="comment-stars-view is-half" for="rating-3.5"><svg class="icon icon-star-half">
+                                    <use xlink:href="#icon-star-half"></use>
+                                  </svg></label>
+                                <input class="comment-stars-input" type="radio" name="rating" value="3" id="rating-3"> <label class="comment-stars-view" for="rating-3"><svg class="icon icon-star">
+                                    <use xlink:href="#icon-star"></use>
+                                  </svg></label>
+                                <input class="comment-stars-input" type="radio" name="rating" value="2.5" id="rating-2.5"> <label class="comment-stars-view is-half" for="rating-2.5"><svg class="icon icon-star-half">
+                                    <use xlink:href="#icon-star-half"></use>
+                                  </svg></label>
+                                <input class="comment-stars-input" type="radio" name="rating" value="2" id="rating-2"> <label class="comment-stars-view" for="rating-2"><svg class="icon icon-star">
+                                    <use xlink:href="#icon-star"></use>
+                                  </svg></label>
+                                <input class="comment-stars-input" type="radio" name="rating" value="1.5" id="rating-1.5"> <label class="comment-stars-view is-half" for="rating-1.5"><svg class="icon icon-star-half">
+                                    <use xlink:href="#icon-star-half"></use>
+                                  </svg></label>
+                                <input class="comment-stars-input" type="radio" name="rating" value="1" id="rating-1"> <label class="comment-stars-view" for="rating-1"><svg class="icon icon-star">
+                                    <use xlink:href="#icon-star"></use>
+                                  </svg></label>
+                                <input class="comment-stars-input" type="radio" name="rating" value="0.5" id="rating-0.5"> <label class="comment-stars-view is-half" for="rating-0.5"><svg class="icon icon-star-half">
+                                    <use xlink:href="#icon-star-half"></use>
+                                  </svg></label>
+                              </div>
+                              <span class="carrots__view--number">(1 customer review)</span>
+                            </div>
+
+                            <p class="carrots-farm__text">Carrots from Tomissy Farm are one of the best on the market. Tomisso and his family are giving a full love to his Bio products. Tomisso’s carrots are growing on the fields naturally.</p>
+
+                            <ul class="carrots_description">
+                                <li class="carrots__description--item">
+                                    <div class="carrots__description--question">
+                                        <p class="carrots__question--sort">SKU:</p>
+                                        <p class="carrots__question--sort">Category:</p>
+                                        <p class="carrots__question--sort">Stock:</p>
+                                        <p class="carrots__question--sort">Farm</p>
+                                    </div>
+                                    <div class="carrots__description--answer">
+                                        <span class="carrots__answer--item">76645</span>
+                                        <span class="carrots__answer--item">Vegetables</span>
+                                        <span class="carrots__answer--item">In Stock</span>
+                                        <span class="carrots__answer--item">Grocery Tarm Fields</span>
+                                    </div>
+                                </li>
+
+                                <li class="carrots__description--item">
+                                    <div class="carrots__description--question">
+                                        <p class="carrots__question--sort">Freshness:</p>
+                                        <p class="carrots__question--sort">Buy by:</p>
+                                        <p class="carrots__question--sort">Delivery:</p>
+                                        <p class="carrots__question--sort">Delivery area</p>
+                                    </div>
+                                    <div class="carrots__description--answer">
+                                        <span class="carrots__answer--item">1 days old</span>
+                                        <span class="carrots__answer--item">pcs, kgs, box, pack</span>
+                                        <span class="carrots__answer--item">in 2 days</span>
+                                        <span class="carrots__answer--item">Czech republic</span>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <ul class="purchase__list">
+                                <li class="purchase__items">
+                                    <div class="purchase__cost">
+                                        <p class="purchase__origin--cost">36.23 USD</p>
+                                        <span class="purchase__discount products__discount">48.56 USD</span>
+                                    </div>
+                                </li>
+
+                                <li class="purchase__items">
+                                    <form action="active" class="purchase__form">
+                                        <label for="usernumber"></label>
+                                        <input class="usernumber" type="number" value="1" id="usernumber" name="usernumber">
+
+                                        <select class="cost-select" name="cost-select" id="cost-select">
+                                            <option value="1">Pcs</option>
+                                            <option value="1">Pcs</option>
+                                            <option value="1">Pcs</option>
+                                            <option value="1">Pcs</option>
+                                        </select>
+                                    </form>
+                                </li>
+
+                                <li class="purchase__items">
+                                    <button class="purchase__add--btn" type="button">Add to cart</button>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -227,7 +336,7 @@
                         </div>
                     </div>
                 </footer>
-
+                
                 <script src="/js/main.js"></script>
             </body>
             </html>
