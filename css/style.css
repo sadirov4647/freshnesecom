@@ -1351,7 +1351,7 @@ svg {
     margin-bottom: 40px;
 }
 .carrots__image--item{
-    width: 569px;
+    width: 550px;
     height: 436px;
     background-color:#F9F9F9;
     border-radius:12px;
@@ -1413,6 +1413,7 @@ svg {
     background-color: #F9F9F9;
     border: 1px solid #D1D1D1;
     border-radius:12px;
+    white-space: nowrap;
 }
 .usernumber{
     width: 40px;
@@ -1439,6 +1440,7 @@ svg {
     font-size: 15px;
     line-height: 22px;
     cursor: pointer;
+    white-space: nowrap;
 }
 
 .purchase__wish{
@@ -1644,6 +1646,7 @@ svg {
     .search-section{
         justify-content: center;
         flex-direction: column;
+        margin-left: 130px;
     }
     .search-form{
         display: block;
@@ -1857,6 +1860,12 @@ svg {
     .column-sorts{
         margin-bottom: 30px;
     }
+    .purchase__origin--cost{
+        margin-right: 20px;
+    }
+    .purchase__items:not(:last-child){
+        margin-right: 20px;
+    }
     
     
 }
@@ -1867,6 +1876,9 @@ svg {
     }
     .dinner-tips__wrapper{
         padding: 10px;
+    }
+    .carrots__image{
+        margin-bottom: 32px;
     }
 }
 
