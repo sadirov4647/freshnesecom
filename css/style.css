@@ -1574,14 +1574,35 @@ svg {
     color:var(--unique-color);
 }
 .billing__info--form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     padding: 0;
     margin: 0;
     list-style-type: none;
 }
 .billing__info--item label{
     display: block;
+    font-family: var(--heading-fonts-stack);
+    line-height: 18px;
 }
-
+.billing__info--item input{
+    width: 320px;
+    border: 1px solid #D1D1D1;
+    border-radius: 12px;
+    background-color: #f9f9f9;
+    outline: none;
+}
+.billing__info--item{
+    margin-bottom: 32px;
+}
+.billing__info--item input[placeholder]{
+    padding: 11px 22px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: var(--unique-color);
+}
 
 
 
