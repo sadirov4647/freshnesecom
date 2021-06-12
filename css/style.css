@@ -1603,7 +1603,9 @@ svg {
     line-height: 19px;
     color: var(--unique-color);
 }
-
+.info__checkbox--wrapper input{
+    width: ;
+}
 
 
 

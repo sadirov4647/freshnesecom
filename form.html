@@ -161,14 +161,39 @@
                                             <input type="text" class="username" id="username" name="username" placeholder="First name">
                                         </li>
                                         <li class="billing__info--item">
-                                            <label for="username">First name</label>
-                                            <input type="text" class="username" id="username" name="username" placeholder="First name">
+                                            <label for="lastname">Last name</label>
+                                            <input type="text" class="lastname" id="lastname" name="lastname" placeholder="Last name">
                                         </li>
                                         <li class="billing__info--item">
-                                            <label for="username">First name</label>
-                                            <input type="text" class="username" id="username" name="username" placeholder="First name">
+                                            <label for="useremail">Email address</label>
+                                            <input type="email" class="Email" id="useremail" name="useremail" placeholder="Email address">
+                                        </li>
+                                        <li class="billing__info--item">
+                                            <label for="userphone">Phone number</label>
+                                            <input type="tel" class="userphone" id="userphone" name="userphone" placeholder="Phone number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                                            required>
+                                        </li>
+                                        <li class="billing__info--item">
+                                            <label for="useraddress">Address</label>
+                                            <input type="text" class="useraddress" id="useraddress" name="useraddress" placeholder="Address">
+                                        </li>
+                                        <li class="billing__info--item">
+                                            <label for="usercity">Town / City</label>
+                                            <input type="text" class="usercity" id="usercity" name="usercity" placeholder="Town / City">
+                                        </li>
+                                        <li class="billing__info--item">
+                                            <label for="usercountry">State / Country</label>
+                                            <input type="text" class="usercountry" id="usercountry" name="usercountry" placeholder="State / Country">
+                                        </li>
+                                        <li class="billing__info--item">
+                                            <label for="usercode">ZIP/Postal code</label>
+                                            <input type="text" class="usercode" id="usercode" name="usercode" placeholder="ZIP/Postal code" pattern="[0-9]*">
                                         </li>
                                     </ul>
+                                    <div class="info__checkbox--wrapper">
+                                        <input type="checkbox" id="usercheck" name="usercheck">
+                                        <label for="usercheck">Ship to a different address?</label>
+                                    </div>
                                 </div>
                             </div>
                         </form>
