@@ -146,7 +146,7 @@
                     <div class="checkout">
                         <form class="checkout__form" action="">
                             <div class="billing__side">
-                                <div class="billing__info">
+                                <div class="billing__steps billing__info">
                                     <div class="billing__header">
                                         <div class="billing__header--titles">
                                             <h1 class="billing__title">Billing info</h1>
@@ -195,81 +195,146 @@
                                         <label for="usercheck">Ship to a different address?</label>
                                     </div>
                                 </div>
+                                
+                                <div class="billing__steps billing__method">
+                                    <div class="billing__header">
+                                        <div class="billing__header--titles">
+                                            <h1 class="billing__title">Billing method</h1>
+                                            <p class="billing__para">Please enter your billing method</p>
+                                        </div>
+                                        <p class="billing__pages">Step <span class="billing__page--number">2</span> of 5</p>
+                                    </div>
+                                    
+                                    <div class="fedex__price">
+                                        <div class="company-input">
+                                            <input type="radio" name="fedex" id="fedex">
+                                            <label for="fedex">FedEx</label>
+                                        </div>
+                                        <div class="additional__price">
+                                            <span class="additional__discount">+32 USD</span>
+                                            <p>Additional price</p>
+                                        </div>
+                                        <div class="fedex__logo">
+                                            <img src="/images/form/fedex.svg" alt="fedex logo" width="54" height="26">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="fedex__price">
+                                        <div class="company-input">
+                                            <input type="radio" name="dhl" id="dhl">
+                                            <label for="dhl">DHL</label>
+                                        </div>
+                                        <div class="additional__price">
+                                            <span class="additional__discount">+15 USD</span>
+                                            <p>Additional price</p>
+                                        </div>
+                                        <div class="fedex__logo">
+                                            <img src="/images/form/dhl.svg" alt="dhl logo" width="93" height="14">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="billing__steps payment__method">
+                                    <div class="billing__header">
+                                        <div class="billing__header--titles">
+                                            <h1 class="billing__title">Payment method</h1>
+                                            <p class="billing__para">Please enter your payment method</p>
+                                        </div>
+                                        <p class="billing__pages">Step <span class="billing__page--number">3</span> of 5</p>
+                                    </div>
+                                    
+                                    <div class="payment__wrapper">
+                                        <div class="visa__payment">
+                                            <div class="visa__credit">
+                                                <input type="radio" name="visa" id="visa">
+                                                <label for="visa">Credit card</label>
+                                            </div>
+                                            <img src="/images/form/visa.svg" alt="visa" width="94" height="20">
+                                        </div>
+                                        <label class="card-number__label" for="card-number">Card holder</label>
+                                        <input type="text" name="card-number" id="card-number" placeholder="Card number">
+                                        
+                                        <div class="cards-info">
+                                            <div class="cards-holder">
+                                                <label for="holder">Card holder</label>
+                                                <input type="text" id="holder" name="holder" placeholder="Card holder">
+                                            </div>
+                                            <div class="cards-date">
+                                                <label for="expdate">Expiration date</label>
+                                                <input type="date" id="expdate" name="expdate">
+                                            </div>
+                                            <div class="cards-cvc">
+                                                <label for="expdate">CVC</label>
+                                                <input type="text" id="cvc" name="cvc" placeholder="CVC">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="paypal">
+                                        <div class="paypal__wrapper">
+                                            <input type="radio" name="paypal-radio" id="paypal-radio">
+                                            <label for="paypal-radio">PayPal</label>
+                                        </div>
+                                        <img src="/images/form/paypal.svg" alt="paypal" width="75" height="20">
+                                    </div>
+                                    <div class="paypal">
+                                        <div class="paypal__wrapper">
+                                            <input type="radio" name="bitcoin-radio" id="bitcoin-radio">
+                                            <label for="bitcoin-radio">Bitcoin</label>
+                                        </div>
+                                        <img src="/images/form/bitcoin.svg" alt="paypal" width="75" height="20">
+                                    </div>
+                                </div>
+                                
+                                <div class="billing__steps additional__info">
+                                    <div class="billing__header">
+                                        <div class="billing__header--titles">
+                                            <h1 class="billing__title">Additional informations</h1>
+                                            <p class="billing__para">Need something else? We will make it for you!</p>
+                                        </div>
+                                        <p class="billing__pages">Step <span class="billing__page--number">4</span> of 5</p>
+                                    </div>
+                                    
+                                    <div class="billing__textarea">
+                                        <label for="note">Order notes</label>
+                                        <textarea name="note" id="note" cols="50" rows="5" placeholder="Need a specific delivery day? Sending a gitf? Let’s say ..."></textarea>
+                                    </div>
+                                </div>
+                                
+                                <div class="billing__steps billing__confirmation">
+                                    <div class="billing__header">
+                                        <div class="billing__header--titles">
+                                            <h1 class="billing__title">Confirmation</h1>
+                                            <p class="billing__para">We are getting to the end. Just few clicks and your order si ready!</p>
+                                        </div>
+                                        <p class="billing__pages">Step <span class="billing__page--number">5</span> of 5</p>
+                                    </div>
+                                    
+                                    <div class="conf-agree spam__agree">
+                                        <input type="checkbox" name="spam_agree" id="spam_agree">
+                                        <label for="spam_agree">I agree with sending an Marketing and newsletter emails. No spam, promissed!</label>
+                                    </div>
+                                    <div class="conf-agree terms__agree">
+                                        <input type="checkbox" name="terms_agree" id="terms_agree">
+                                        <label for="terms_agree">I agree with our terms and conditions and privacy policy.</label>
+                                    </div>
+                                    <button class="complete__btn">Complete order</button>
+                                    
+                                    <div class="billing__safety">
+                                        <h3 class="billing__safety--title">All your data are safe</h3>
+                                        <p class="billing__safety--description">We are using the most advanced security to provide you the best experience ever.</p>
+                                    </div>
+                                </div>
                             </div>
                         </form>
                     </div>
                 </div>
                 
-                <footer class="site__footer">
-                    <div class="footer__container container">
-                        <ul class="footer__list">
-                            <li class="footer__item">
-                                <h3 class="footer__item--title">Get in touch</h3>
-                                <ul class="footer__links--list touch__list">
-                                    <li class="footer__links--item"><a href="#about.html">About Us</a></li>
-                                    <li class="footer__links--item"><a href="#careers.html">Careers</a></li>
-                                    <li class="footer__links--item"><a href="#">Press Relaeses</a></li>
-                                    <li class="footer__links--item"><a href="#blog.html">Blog</a></li>
-                                </ul>
-                            </li>
-                            <li class="footer__item">
-                                <h3 class="footer__item--title">Connections</h3>
-                                <ul class="footer__links--list connections__list">
-                                    <li class="footer__links--item"><a href="#">Facebook</a></li>
-                                    <li class="footer__links--item"><a href="#">Twitter</a></li>
-                                    <li class="footer__links--item"><a href="#">Instagram</a></li>
-                                    <li class="footer__links--item"><a href="#">Youtube</a></li>
-                                    <li class="footer__links--item"><a href="#">Linkedin</a></li>
-                                </ul>
-                            </li>
-                            <li class="footer__item">
-                                <h3 class="footer__item--title">Earnings</h3>
-                                <ul class="footer__links--list earnings__list">
-                                    <li class="footer__links--item"><a href="#">Become an Affiliate</a></li>
-                                    <li class="footer__links--item"><a href="#">Advertise your product</a></li>
-                                    <li class="footer__links--item"><a href="#">Sell on Market</a></li>
-                                </ul>
-                            </li>
-                            <li class="footer__item">
-                                <h3 class="footer__item--title">Account</h3>
-                                <ul class="footer__links--list account__list">
-                                    <li class="footer__links--item"><a href="#">Your account</a></li>
-                                    <li class="footer__links--item"><a href="#">Returns Centre</a></li>
-                                    <li class="footer__links--item"><a href="#">100 % purchase protection</a></li>
-                                    <li class="footer__links--item"><a href="#">Chat with us</a></li>
-                                    <li class="footer__links--item"><a href="#">Help</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        
-                        <div class="footer__tags">
-                            <h3 class="footer__tags--title">Product tags</h3>
-                            <ul class="footer__tags--list">
-                                <li class="footer__tags--item"><a href="#">Beans</a></li>
-                                <li class="footer__tags--item"><a href="#">Carrots</a></li>
-                                <li class="footer__tags--item"><a href="#">Apples</a></li>
-                                <li class="footer__tags--item"><a href="#">Garlic</a></li>
-                                <li class="footer__tags--item"><a href="#">Mushrooms</a></li>
-                                <li class="footer__tags--item"><a href="#">Tomatoes</a></li>
-                                <li class="footer__tags--item"><a href="#">Chili peppers</a></li>
-                                <li class="footer__tags--item"><a href="#">Brocoli</a></li>
-                                <li class="footer__tags--item"><a href="#">Watermelons</a></li>
-                                <li class="footer__tags--item"><a href="#">Oranges</a></li>
-                                <li class="footer__tags--item"><a href="#">Bananas</a></li>
-                                <li class="footer__tags--item"><a href="#">Grapes</a></li>
-                                <li class="footer__tags--item"><a href="#">Cherries</a></li>
-                                <li class="footer__tags--item"><a href="#">Meat</a></li>
-                                <li class="footer__tags--item"><a href="#">Seo tag</a></li>
-                                <li class="footer__tags--item"><a href="#">Fish</a></li>
-                                <li class="footer__tags--item"><a href="#">Seo tag</a></li>
-                                <li class="footer__tags--item"><a href="#">Fresh food</a></li>
-                                <li class="footer__tags--item"><a href="#">Lemons</a></li>
-                            </ul>
-                            <span class="copyright">Copyright © 2020 petrbilek.com</span>
-                        </div>
+                <footer class="form__footer">
+                    <div class="container">
+                        <p class="form__copyright">Copyright © 2020 Freshnesecom</p>
                     </div>
                 </footer>
-                
                 <script src="/js/main.js"></script>
             </body>
             </html>

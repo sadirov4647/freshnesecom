@@ -1557,8 +1557,14 @@ svg {
 }
 
 /* CHECKOUT PAGE */
+.checkout{
+    margin-bottom: 16px;
+}
 .billing__side{
     max-width: 670px;
+}
+.billing__steps:not(:last-child){
+    margin-bottom: 64px;
 }
 .billing__header{
     display: flex;
@@ -1606,6 +1612,215 @@ svg {
 .info__checkbox--wrapper input{
     width: ;
 }
+
+
+.fedex__price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 12px 18px;
+    border: 1px solid #D1D1D1;
+    border-radius: 12px;
+    background-color: #f9f9f9;
+}
+.fedex__price:not(:last-child){
+    margin-bottom: 16px;
+}
+.fedex__price p{
+    font-family: var(--heading-fonts-stack);
+    font-weight: bold;
+    margin: 0;
+    margin-left: 12px;
+}
+.company-input{
+    display: flex;
+    align-items: center;
+}
+.company-input label{
+    margin-left: 20px;
+    font-family: var(--heading-fonts-stack);
+    font-weight: bold;
+}
+.company-input input{
+    height: 20px;
+    width: 20px;
+}
+.additional__price{
+    display: flex;
+    align-items: center;
+}
+.additional__discount{
+    font-family: var(--heading-fonts-stack);
+    color:var(--btn-color);
+    font-weight: 600;
+}
+
+
+.payment__wrapper{
+    display: flex;
+    flex-direction:column;
+    padding: 18px;
+    border: 1px solid #D1D1D1;
+    border-radius: 12px;
+    margin-bottom: 16px;
+}
+.payment__method label{
+    font-family: var(--heading-fonts-stack);
+    font-weight: 600;
+}
+.payment__method input[type="radio"]{
+    width: 20px;
+    height: 20px;
+}
+.visa__payment{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+.visa__credit{
+    display: flex;
+    align-items: center;
+}
+.visa__payment label{ 
+    margin-left: 18px;
+}
+.card-number__label{
+    display: block;
+}
+#card-number{
+    background: #F9F9F9;
+    border: 1px solid #D1D1D1;
+    box-sizing: border-box;
+    border-radius: 12px;
+    padding: 11px 21px;
+    outline: none;
+    margin-bottom: 32px;
+}
+.cards-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.cards-holder input{
+    margin-right: 32px;
+}
+.cards-date{
+    margin-right: 16px;
+}
+.cards-info label{
+    display: block;
+}
+.cards-info input{
+    background: #F9F9F9;
+    border: 1px solid #D1D1D1;
+    box-sizing: border-box;
+    border-radius: 12px;
+    padding: 11px 21px;
+    outline: none;
+}
+.paypal{
+    background: #F9F9F9;
+    border: 1px solid #D1D1D1;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 18px;
+    margin-bottom: 16px;
+}
+.paypal__wrapper{
+    display: flex;
+    align-items: center;
+}
+.paypal__wrapper label{
+    margin-left: 20px;
+}
+.additional__info label{
+    display: block;
+    font-family: var(--heading-fonts-stack);
+    font-weight: 600;
+}
+.billing__textarea{
+    display: flex;
+    flex-direction:column;
+}
+.additional__info textarea{
+    padding: 11px 21px;
+    background-color: #F9F9F9;
+    border: 1px solid #D1D1D1;
+    border-radius: 12px;
+    outline: none;
+}
+.additional__info textarea[placeholder]{
+    color:var(--unique-color);
+    font-size: 14px;
+    line-height: 19px;
+}
+.conf-agree{
+    padding: 11px 18px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #D1D1D1;
+    background-color: #F9F9F9;
+    border-radius: 12px;
+}
+.conf-agree:not(:last-child){
+    margin-bottom: 16px;
+}
+.conf-agree input{
+    width: 20px;
+    height: 20px;
+}
+.conf-agree label{
+    margin-left: 10px;
+}
+.spam__agree{
+    max-width: 80%;
+}
+.terms__agree{
+    max-width: 60%;
+    margin-bottom: 32px;
+}
+.complete__btn{
+    padding: 17px 48px;
+    background-color: var(--btn-color);
+    color: #fff;
+    font-family: var(--heading-fonts-stack);
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 22px;
+    border: 2px solid #46760A;
+    border-radius: 12px;
+    margin-bottom: 34px;
+}
+.billing__safety{
+    max-width: 213px;
+}
+.billing__safety::before{
+    content:"";
+    display: block;
+    background: url(/images/form/security.png) no-repeat;
+    width: 32px;
+    height: 32px;
+    margin-bottom: 16px;
+}
+.billing__safety--description{
+    color:var(--unique-color);
+}
+.form__footer{
+    padding: 64px 45px;
+    background:#FDFDFD;
+}
+.form__copyright{
+    font-size: 14px;
+    line-height: 19px;
+}
+
+
+
 
 
 
