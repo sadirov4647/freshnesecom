@@ -1829,6 +1829,7 @@ svg {
     padding: 32px 16px;
     border: 1px solid #D1D1D1;
     border-radius: 12px;
+    align-self:flex-start;
 }
 .summary__title{
     font-size: 22px;
@@ -1889,6 +1890,7 @@ svg {
 }
 .summary-purchase__list{
     display: flex;
+    align-items: center;
     justify-content: space-between;
     padding: 0;
     margin: 0;
@@ -1906,7 +1908,60 @@ svg {
     color: var(--btn-color);
     margin-right: 44px;
 }
-
+.product__shot{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    margin-bottom: 32px;
+}
+.product__shot p,
+.product__shot span{
+    font-weight: 600;
+}
+.shot__item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.summary__apply{
+    background: #F9F9F9;
+    border: 1px solid #D1D1D1;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.summary__apply--input{
+    font-family: var(--heading-fonts-stack);
+    background:inherit;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 22px;
+}
+.summary__apply--code{
+    background: inherit;
+    border: none;
+    outline: none;
+    padding: 11px 21px;
+}
+.total__description{
+    color: var(--btn-color);
+}
+.summary__total-amount{
+    font-family: var(--heading-fonts-stack);
+    font-size: 26px;
+    line-height: 39px;
+    color: var(--btn-color);
+}
+.total-order{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 
 @media only screen and (min-width:576px) and (max-width:768px){
