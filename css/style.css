@@ -1558,6 +1558,9 @@ svg {
 
 /* CHECKOUT PAGE */
 .checkout{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     margin-bottom: 16px;
 }
 .billing__side{
@@ -1795,6 +1798,7 @@ svg {
     border: 2px solid #46760A;
     border-radius: 12px;
     margin-bottom: 34px;
+    cursor: pointer;
 }
 .billing__safety{
     max-width: 213px;
@@ -1819,8 +1823,89 @@ svg {
     line-height: 19px;
 }
 
-
-
+.summary__side{
+    margin-left:  32px;
+    width: 468px;
+    padding: 32px 16px;
+    border: 1px solid #D1D1D1;
+    border-radius: 12px;
+}
+.summary__title{
+    font-size: 22px;
+    line-height: 33px;
+}
+.summary__description{
+    color: var(--unique-color);
+}
+.summary__product{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 16px;
+    margin-bottom: 32px;
+    border-bottom: 1px solid #F9F9F9;
+}
+.summary__product--image{
+    background:#f9f9f9;
+    width: 100px;
+    height: 67px;
+    border-radius: 12px;
+}
+.summary__features--list{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.summary__features--item{
+    display: flex;
+    align-items: center;
+}
+.summary__wishlist{
+    margin-left: 8px;
+}
+.summary__flex--wrapper{
+    margin-right: 16px;
+}
+.summary__compare{
+    display: flex;
+}
+.summary__compare::before{
+    content: "";
+    background: url(/images/fruit/product/compare.png) no-repeat;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+.summary__remove{
+    margin-left: 8px;
+}
+.summary__product--wrapper{
+    display: flex;
+}
+.summary__product--origin{
+    margin-right: 14px;
+}
+.summary__product--origin p{
+    color: var(--unique-color);
+}
+.summary-purchase__list{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+.summary-purchase__cost{
+    white-space: nowrap;
+}
+.summary-purchase__origin--cost{
+    margin: 0;
+    font-family: var(--heading-fonts-stack);
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 39px;
+    color: var(--btn-color);
+    margin-right: 44px;
+}
 
 
 
