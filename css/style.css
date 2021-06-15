@@ -1964,6 +1964,42 @@ svg {
 }
 
 
+/* Card */
+.space{
+    display: flex;
+    justify-content: space-between;
+    padding: 48px 0;
+    position: relative;
+}
+
+.space__tag{
+    font-family: var(--heading-fonts-stack);
+    padding: 0 8px;
+    font-weight: 600;
+    line-height: 18px;
+    background:#fff;
+    color: var(--btn-color);
+    border-radius: 12px;
+}
+.space__text{
+    margin-top: 195px;
+}
+.space__text--wrapper{
+    width: 380px;
+    position: absolute;
+    top: 48px;
+    padding: 24px;
+    color: #fff;
+}
+.space__flex--wrapper{
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+.space__author{
+    margin-left: 8px;
+    margin-right: 16px;
+}
 @media only screen and (min-width:576px) and (max-width:768px){
     .container{
         max-width: 728px;
