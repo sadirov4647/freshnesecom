@@ -2080,7 +2080,7 @@ svg {
 }
 .blog__card--item{
     max-width: 269px;
-
+    
 }
 .blog__card--item{
     margin-right: 20px;
@@ -2101,6 +2101,22 @@ svg {
 }
 .blog-card__author{
     margin-right: 8px;
+}
+
+
+
+/* SINGLE BLOG */
+.single__container{
+    max-width: 810px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.singl__img{
+    display: block;
+    background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    z-index: 99;
 }
 
 
