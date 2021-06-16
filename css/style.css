@@ -2120,7 +2120,7 @@ svg {
     height: 480px;
     z-index: 99;
     margin: 48px 0;
-
+    
 }
 .single__title--list{
     font-family: var(--heading-fonts-stack);
@@ -2146,6 +2146,12 @@ svg {
 }
 .grey-item p{
     color: var(--description-color);
+}
+.single__tags-section{
+    display: flex;
+}
+.single__tags--left{
+    margin-right: 32px;
 }
 .single__title--item-title{
     font-weight: 600;
@@ -2174,7 +2180,12 @@ svg {
     margin-right: 8px;
     margin-bottom: 8px;
 }
-
+.single__tags--para{
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 23px;
+    max-width: 569px;
+}
 @media only screen and (min-width:576px) and (max-width:768px){
     .container{
         max-width: 728px;
