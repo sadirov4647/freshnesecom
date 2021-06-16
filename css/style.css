@@ -2200,6 +2200,18 @@ svg {
     color: var(--titles-color);
     text-decoration: none;
     margin-right: 34px;
+    display: flex;
+    align-self: flex-start;
+}
+.single__back--text{
+    margin-bottom: 48px;
+}
+.single__back--link::before{
+    content: "";
+    background: url(/images/single/direction.png) no-repeat;
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
 }
 .single__back--text{
     font-weight: normal;
@@ -2207,7 +2219,43 @@ svg {
     line-height: 23px;
     max-width: 569px;
 }
-
+.single__back--social{
+    font-family: var(--heading-fonts-stack);
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 22px;
+}
+.single__back--social-items a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--titles-color);
+}
+.single__back--social-items a::before{
+    content: "";
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+.single-pinterest a::before{
+    background: url(/images/single/Pinterest.png) no-repeat;
+}
+.single-twitter a::before{
+    background: url(/images/single/Twitter.png) no-repeat;
+}
+.single-facebook a::before{
+    background: url(/images/single/Facebook.png) no-repeat;
+}
+.single-linkedin a::before{
+    background: url(/images/single/icon-linkedin.png) no-repeat;
+}
 
 
 @media only screen and (min-width:576px) and (max-width:768px){
