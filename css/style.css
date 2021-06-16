@@ -2186,6 +2186,30 @@ svg {
     line-height: 23px;
     max-width: 569px;
 }
+.single__back{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.single__back--link{
+    font-family: var(--heading-fonts-stack);
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 22px;
+    color: var(--titles-color);
+    text-decoration: none;
+    margin-right: 34px;
+}
+.single__back--text{
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 23px;
+    max-width: 569px;
+}
+
+
+
 @media only screen and (min-width:576px) and (max-width:768px){
     .container{
         max-width: 728px;
