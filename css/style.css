@@ -2150,6 +2150,7 @@ svg {
 }
 .single__tags-section{
     display: flex;
+    margin-bottom: 48px;
 }
 .single__tags--left{
     margin-right: 32px;
@@ -2232,6 +2233,7 @@ svg {
     font-weight: bold;
     font-size: 15px;
     line-height: 22px;
+    margin-bottom: 48px;
 }
 .single__back--social-items a{
     display: flex;
@@ -2287,6 +2289,16 @@ svg {
     font-family: var(--heading-fonts-stack);
     font-weight: 600;
 }
+.single__form--item textarea{
+    padding: 12px;
+    width: 435px;
+    font-size: 14px;
+    line-height: 19px;
+    background: #F9F9F9;
+    border: 1px solid #D1D1D1;
+    border-radius: 12px;
+    outline: none;
+}
 .block-label{
     display: block;
 }
@@ -2302,7 +2314,15 @@ svg {
     cursor: pointer;
 }
 .single-input__wrap{
-    
+    display: flex;
+    align-items: center;
+}
+.single-input__wrap input{
+    width: 20px;
+    height: 20px;
+}
+.single-input__wrap label{
+    margin-left: 10px;
 }
 
 
