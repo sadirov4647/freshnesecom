@@ -2324,8 +2324,31 @@ svg {
 .single-input__wrap label{
     margin-left: 10px;
 }
-
-
+.single__commits--title{
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    font-family: var(--heading-fonts-stack);
+}
+.single__comment--user{
+    padding: 16px;
+    background: #FFFFFF;
+    border: 1px solid #D1D1D1;
+    border-radius: 12px;
+}
+.single__admin-span{
+    font-family: var(--heading-fonts-stack);
+    padding: 0 8px;
+    background: #F4F8EC;
+    border-radius: 12px;
+    color: var(--btn-color);
+}
+.single__comment--admin{
+    display: flex;
+}
+.single__admin-span{
+    align-self: flex-start;
+}
 
 
 
