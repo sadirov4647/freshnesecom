@@ -2324,17 +2324,23 @@ svg {
 .single-input__wrap label{
     margin-left: 10px;
 }
+.single__commits{
+    display: flex;
+    flex-direction: column;
+}
 .single__commits--title{
     font-weight: 600;
     font-size: 22px;
     line-height: 33px;
     font-family: var(--heading-fonts-stack);
 }
-.single__comment--user{
+.single__comment--text{
     padding: 16px;
     background: #FFFFFF;
     border: 1px solid #D1D1D1;
     border-radius: 12px;
+    max-width: 569px;
+    margin-bottom: 40px;
 }
 .single__admin-span{
     font-family: var(--heading-fonts-stack);
@@ -2349,7 +2355,30 @@ svg {
 .single__admin-span{
     align-self: flex-start;
 }
-
+.single__comment--admin-header time{
+    color: #D1D1D1;
+}
+.single__comment--admin-header{
+    position: relative;
+    margin-left: 50px;
+}
+.single__comment--admin-header::before{
+    position: absolute;
+    content: "";
+    background: url(/images/single/singleauthor.svg) no-repeat;
+    width: 40px;
+    height: 40px;
+    left: -50px;
+}
+.single__comments--para{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+}
+.single__customer--text{
+    width: 468px;
+    align-self: flex-end;
+}
 
 
 
