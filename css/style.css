@@ -2326,6 +2326,7 @@ svg {
 }
 .single__commits{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
 }
 .single__commits--title{
