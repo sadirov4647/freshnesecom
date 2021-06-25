@@ -446,6 +446,13 @@ h2 {
     color: var(--titles-color);
     white-space: nowrap;
 }
+.recepies__more:hover{
+    background-color: var(--btn-color);
+    color: #fff;
+}
+.recepies__more:hover::after{
+    filter: brightness(0) invert(1);
+}
 .recepies__more::after{
     content: "";
     background: url(/images/card/arrow-right.svg) no-repeat;
