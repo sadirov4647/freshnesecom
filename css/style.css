@@ -523,6 +523,10 @@ h2 {
     line-height: 22px;
     cursor: pointer;
 }
+.card__buy--btn:hover{
+    background-color: #fff;
+    color: var(--btn-color);
+}
 .card__buy--wrapper{
     display: flex;
     justify-content: space-between;
